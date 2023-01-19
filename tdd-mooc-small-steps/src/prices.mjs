@@ -29,7 +29,7 @@ function createApp(database) {
       return new Date(dateString);
     }
   }
-  function convert(data) {}
+  const convert = (date) => {return date ?  Temporal.PlainDate.from(date) : undefined};
   function calculateCost(age, type, date, baseCost) {
     if (type === "night") {
       return calculateCostForNightTicket(age, baseCost);
