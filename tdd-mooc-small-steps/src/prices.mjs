@@ -93,7 +93,7 @@ function convert(date) {
       let plainDate = convert(date);
       if (
         date &&
-        date.getFullYear() === holiday.getFullYear() &&
+        plainDate.year === holiday.getFullYear() &&
         date.getMonth() === holiday.getMonth() &&
         date.getDate() === holiday.getDate()
       ) {
