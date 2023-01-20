@@ -30,8 +30,7 @@ function createApp(database) {
     }
   }
 
-function convert(date) { 
-}
+
 
   function calculateCost(age, type, date, baseCost) {
     if (type === "night") {
