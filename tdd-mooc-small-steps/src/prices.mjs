@@ -90,6 +90,7 @@ function convert(date) {
     for (let row of holidays) {
       let holiday = new Date(row.holiday);
       let plainHoliday = convert(row.holiday);
+      let plainDate = convert(date);
       if (
         date &&
         date.getFullYear() === holiday.getFullYear() &&
