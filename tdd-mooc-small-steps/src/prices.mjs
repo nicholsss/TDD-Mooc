@@ -89,7 +89,7 @@ function convert(date) {
     const holidays = database.getHolidays();
     for (let row of holidays) {
       let holiday = new Date(row.holiday);
-      let plainHoliday = convert(row.holiday);
+      let plainHoliday = convert(holiday);
       let plainDate = convert(date);
       if (
         date &&
