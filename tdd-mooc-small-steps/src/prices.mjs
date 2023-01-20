@@ -95,7 +95,7 @@ function convert(date) {
         date &&
         plainDate.year === plainHoliday.year &&
         plainDate.month === plainHoliday.month &&
-        date.getDate() === holiday.getDate()
+        plainDate.day === plainHoliday.day
       ) {
         return true;
       }
