@@ -93,8 +93,8 @@ function convert(date) {
       let plainDate = date
       if (
         date &&
-        plainDate.year === holiday.year &&
-        plainDate.month === holiday.month &&
+        date.year === holiday.year &&
+        date.month === holiday.month &&
         plainDate.day === holiday.day
       ) {
         return true;
