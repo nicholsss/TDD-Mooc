@@ -32,7 +32,7 @@ function createApp(database) {
 
 function convert(date) { 
   if (date instanceof Date) {
-    return Temporal.PlainDate.from(date).toTemporalInstant().toZonedDateTimeISO("UTC").toPlainDate()}
+    return toTemporalInstant().toZonedDateTimeISO("UTC").toPlainDate()}
 }
 
   function calculateCost(age, type, date, baseCost) {
