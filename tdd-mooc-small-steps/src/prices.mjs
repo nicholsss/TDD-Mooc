@@ -89,8 +89,6 @@ function convert(date) {
     const holidays = database.getHolidays();
     for (let row of holidays) {
       let holiday = Temporal.PlainDate.from(row.holiday);
-      let plainHoliday = holiday
-      let plainDate = date
       if (
         date &&
         date.year === holiday.year &&
