@@ -75,7 +75,7 @@ function convert(date) {
 
   function calculateReduction(date) {
     let reduction = 0;
-    if (date && isMonday(convert(date)) && !isHoliday(date)) {
+    if (date && isMonday(convert(date)) && !isHoliday(convert(date))) {
       reduction = 35;
     }
     return reduction;
@@ -90,7 +90,7 @@ function convert(date) {
     for (let row of holidays) {
       let holiday = Temporal.PlainDate.from(row.holiday);
       let plainHoliday = holiday
-      let plainDate = convert(date);
+      let plainDate = date
       if (
         date &&
         plainDate.year === plainHoliday.year &&
